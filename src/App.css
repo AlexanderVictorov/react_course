@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 .App {
+  display: flex;
   text-align: center;
 }
 
