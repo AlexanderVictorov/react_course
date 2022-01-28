@@ -1,9 +1,9 @@
 import React from 'react';
 
-const MyCount = (props) => {
+const MyCount = ({count}) => {
     return (
         <div>
-            <h3>Вы кликнули {props.count} раз</h3>
+            <h1>Вы кликнули {count} раз</h1>
         </div>
 
     );

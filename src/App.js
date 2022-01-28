@@ -18,7 +18,7 @@ function App() {
         <div className="App">
             <CountWithButton/>
             <MyCount count={count}/>
-            <div style={{display:"flex", justifyContent:"center"}}>
+            <div className='content'>
                 <ExampleButton value={'Click count + 1'} changeCount={() => setCount(prevState => prevState + 1)}/>
                 <ExampleButton value={'Click count - 1'} changeCount={() => setCount(prevState => prevState - 2)}/>
                 <ExampleButton value={'Click reset count'} changeCount={() => setCount(0)}/>
