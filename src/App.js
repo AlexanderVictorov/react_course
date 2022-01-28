@@ -4,7 +4,7 @@ import CountWithButton from "./UI/MyButton/CountWithButton";
 import MyCount from "./UI/MyCount";
 import ExampleButton from "./UI/MyButton/ExampleButton";
 
-const arrayChange = ['Click reset count', 'Click count + 1', 'Click count - 2']
+const arrayValue = ['Click reset count', 'Click count + 1', 'Click count - 2']
 function App() {
     const [count, setCount] = useState(0)
 
@@ -24,7 +24,7 @@ function App() {
             <CountWithButton/>
             <MyCount count={count}/>
             <div className='content'>
-                {arrayChange.map((value, index) => (
+                {arrayValue.map((value, index) => (
                         <ExampleButton
                             key={value} value={value}
                             changeCount={() => {
