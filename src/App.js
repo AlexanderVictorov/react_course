@@ -1,19 +1,21 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import './App.css';
 import CountWithButton from "./UI/MyButton/CountWithButton";
 import MyCount from "./UI/MyCount";
 import ExampleButton from "./UI/MyButton/ExampleButton";
 
 
-
 function App() {
     const [count, setCount] = useState(0)
-    if (count > 5) {
-        setCount(-3)
-    }
-    if (count < -3) {
-        setCount(5)
-    }
+    useEffect(() => {
+        if (count > 5) {
+            setCount(-3)
+        }
+        if (count < -3) {
+            setCount(5)
+        }
+    }, [count])
+
     return (
         <div className="App">
             <CountWithButton/>
