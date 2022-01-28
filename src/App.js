@@ -1,8 +1,8 @@
 import React, {useState} from "react";
 import './App.css';
-import CountWithButton from "./UI/CountWithButton";
+import CountWithButton from "./UI/MyButton/CountWithButton";
 import MyCount from "./UI/MyCount";
-import ExampleButton from "./UI/ExampleButton";
+import ExampleButton from "./UI/MyButton/ExampleButton";
 
 
 
