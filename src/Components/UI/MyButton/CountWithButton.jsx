@@ -12,4 +12,4 @@ const CountWithButton = () => {
     );
 };
 
-export default CountWithButton;
+export default CountWithButton

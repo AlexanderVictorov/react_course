@@ -1,10 +1,11 @@
 import React, {useEffect, useState} from "react";
 import './App.css';
-import CountWithButton from "./UI/MyButton/CountWithButton";
-import MyCount from "./UI/MyCount";
-import ExampleButton from "./UI/MyButton/ExampleButton";
+import CountWithButton from './Components/UI/MyButton/CountWithButton'
+import MyCount from './Components/UI/MyCount'
+import ExampleButton from './Components/UI/MyButton/ExampleButton'
 
 const arrayValue = ['Click reset count', 'Click count + 1', 'Click count - 2']
+
 function App() {
     const [count, setCount] = useState(0)
 
@@ -27,10 +28,8 @@ function App() {
                 {arrayValue.map((value, index) => (
                         <ExampleButton
                             key={value} value={value}
-                            changeCount={() => {
-                                changeCount(index)
-                            }
-                            }/>
+                            changeCount={() => changeCount(index)}
+                        />
                     )
                 )}
             </div>

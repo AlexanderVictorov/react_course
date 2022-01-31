@@ -9,4 +9,4 @@ const ExampleButton = ({changeCount, value}) => {
     );
 };
 
-export default ExampleButton;
+export default ExampleButton

@@ -9,4 +9,4 @@ const MyCount = ({count}) => {
     );
 };
 
-export default MyCount;
+export default MyCount
