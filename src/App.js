@@ -10,10 +10,16 @@ function App() {
     const [count, setCount] = useState(0)
 
     const changeCount = (value) => {
-        if (value === 0) setCount(0)
-        if (value === 1) setCount((prevState) => prevState + 1)
-        if (value === 2) setCount((prevState) => prevState - 2)
-
+        switch (value) {
+            case 0:
+                setCount(0)
+                break;
+            case 1:
+                setCount(prevState => prevState + 1)
+                break;
+            case 2:
+                setCount(prevState => prevState - 2)
+        }
     }
     useEffect(() => {
         if (count > 5) setCount(-3)
